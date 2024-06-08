@@ -1,0 +1,424 @@
+:root {
+    --darkgray: #212329;
+    --lightgray: #373a44;
+    --white: #ffffff;
+    --lightblue: #007BFF;
+    --darkblue: #026ad9;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--darkgray);
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-container {
+    width: 100%;
+    background-color: var(--darkgray);
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+#navbar-logo {
+    color: var(--white);
+    justify-self: start;
+    margin-left: 20px;
+}
+
+#navbar-logo {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+}
+
+.skills-bundle {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    justify-self: end;
+}
+
+.areas-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.areas-item {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.nav-links {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: var(--darkblue);
+    transition: all 0.2s ease-out;
+}
+
+.nav-links-btn {
+    background-color: var(--darkblue);
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+
+.nav-links-btn:hover {
+    background-color: transparent;
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 1px var(--darkblue);
+    transition: all 0.3s ease-out;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--white);
+}
+
+#logo-first {
+    background-color: var(--lightblue);
+    border-radius: 4px;
+    padding: 3px 8px;
+}
+
+#logo-last {
+    color: var(--white);
+}
+
+.heading-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+}
+
+.resume-heading {
+    color: var(--lightblue);
+    font-size: 60px;
+}
+
+#top-heading {
+    margin-top: 175px;
+}
+
+.jobs-container {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.skills-container {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    margin-right: 50%;
+    margin-left: 50px;
+}
+
+.skills-container-right {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50%;
+    margin-right: 50px;
+}
+
+#it-intern-info {
+    margin-top: -100%;
+    display: none;
+}
+
+.job-info {
+    display: none;
+}
+
+#security-specialist-info.active {
+    align-items: center;
+    justify-content: left;
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 18%;
+    padding-right: 100px;
+    margin-bottom: auto;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    color: var(--white);
+}
+
+#it-intern-info.active {
+    align-items: center;
+    justify-content: left;
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 18%;
+    padding-right: 100px;
+    margin-bottom: auto;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    color: var(--white);
+}
+
+#service-coordinator-info.active {
+    align-items: center;
+    justify-content: left;
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 18%;
+    padding-right: 100px;
+    margin-bottom: auto;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    color: var(--white);
+}
+
+#gvsu-info.active {
+    align-items: center;
+    justify-content: left;
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 18%;
+    padding-right: 100px;
+    margin-bottom: auto;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out;
+    color: var(--white);
+}
+
+.job-list-item {
+    padding: 5px;
+}
+
+.jobs-container:hover {
+    cursor: pointer;
+}
+
+.skills-container:hover {
+    cursor: pointer;
+}
+
+#picas-image {
+    width: 150px;
+    height: auto;
+}
+
+#skills-image {
+    width: 90px;
+    height: auto;
+}
+
+#white-image {
+    background-color: white;
+    width: 90px;
+    height: auto;
+}
+
+#gvsu-image {
+    width: 150px;
+    height: auto;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.jobs-description {
+    margin-left: 50px;
+}
+
+.skills-description {
+    margin-left: 50px;
+}
+
+.jobs-heading {
+    color: var(--darkblue);
+}
+
+.skills-heading {
+    color: var(--darkblue);
+}
+
+.jobs-text {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.skills-text {
+    font-size: 20px;
+    color: var(--white);
+}
+
+#show-more {
+    font-size: 18px;
+    color: var(--lightblue);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        position: fixed;
+        top: 0;
+    }
+
+    .skills-bundle {
+        display: grid;
+        grid-template-columns: auto;
+        margin-right: 20px;
+    }
+
+    .skills-heading {
+        font-size: 20px;
+    }
+
+    .areas-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: 0;
+    }
+
+    .jobs-heading {
+        font-size: 20px;
+    }
+
+    .jobs-text {
+        font-size: 20px;
+    }
+
+    .job-list-item {
+        font-size: 18px;
+    }
+
+    .resume-heading {
+        font-size: 30px;
+    }
+
+    .areas-item {
+        margin-top: 50px;
+    }
+
+    #bottom-areas {
+        margin-top: 0;
+        margin-bottom: 150px;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--darkblue);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    #navbar-logo {
+        margin-left: 20px;
+    }
+
+    .nav-menu.active {
+        background: var(--darkgray);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: var(--lightblue);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-links-btn {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: var(--darkblue);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+    }
+
+    .nav-links-btn:hover {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+        border: solid 1px var(--darkblue);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody Visscher - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo"><span id="logo-first">CODY</span><span id="logo-last"> VISSCHER</span></h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="projects.html" class="nav-links">Projects</a></li>
+                <li><a href="resume.html" class="nav-links">Resume</a></li>
+                <li><a href="contact.html" class="nav-links nav-links-btn">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="whoami-container">
+        <div class="whoami-body">
+            <h1 id="whoami-heading">
+                Who Am I?
+            </h1>
+            <p id="whoami-text">
+                I am a student studying Cybersecurity at Grand Valley State University.<br><br>
+                I am also employed as a Jr. IT Security Specialist at a software development firm and independent software vendor for wholesale greenhouses
+                called The Picas Group.<br><br>
+                At The Picas Group, I have gained experience in both supporting an in-house software and providing managed services, such
+                as Web-Application Firewalls, IT, and Cloud Hosting with Microsoft Azure.
+            </p>
+        </div>
+        <img src="Pictures/greenhouse.png" alt="Greenhouse" id="whoami-image">
+    </div>
+
+    <div class="passions-container">
+        <img src="Pictures/webappsec.png" alt="Web-Application Security" id="passions-image">
+        <div class="passions body">
+            <h1 id="passions-heading">
+                What Are My Security Passions?
+            </h1>
+            <p id="passions-text">
+                One of my favorite concepts in Cybersecurity at this point in my education is encryption. I have always enjoyed math from the time
+                I was a little kid until now, and I find the mathematical concepts used in modern encryption to be fascinating.<br><br>
+                Another passion of mine in terms of security is web-application security. This was introduced to me when I began working at The Picas Group.
+                Some of my favorite security related tasks that I have done at The Picas Group was implementing Web-Application Firewalls, securing admin
+                pages to some of our applications, and implementing HTTPS certificates.<br><br>
+                I also have enjoyed working with our SentinelOne tenant and Elastic's Cloud offering and familiarizing myself with their query languages, as
+                well as implementing custom detection rules in both consoles.
+            </p>
+        </div>
+    </div>
+
+    <div class="outside-container">
+        <div class="outside-body">
+            <h1 id="outside-heading">
+                What Are My Passions Outside Of Work?
+            </h1>
+            <p id="outside-text">
+                Outside of work, you can find me watching sports, including football, hockey, wrestling, and occasionally baseball. I have always enjoyed sports,
+                and I even used to officiate high school wrestling!<br><br>
+                Aside from athletics I also enjoy programming, although I don't do much of it anymore. I recently built an app that allows users to encrypt files
+                on their computer using PBKDF2 key derivation and ChaCha20 encryption. You can find the standalone executable on the GitHub repo linked in the projects tab of this website.
+            </p>
+        </div>
+        <img src="Pictures/securevault.png" alt="Cody's Secure Vault App" id="outside-image">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
